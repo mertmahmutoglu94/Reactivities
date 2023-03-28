@@ -22,7 +22,7 @@ namespace API.Controllers
         [HttpGet("{id}")] //api/activities/1
         public async Task<ActionResult<Activity>> GetActivityById(Guid id)
         {
-            return await _context.Activities.FindAsync(id);   
+            return await _context.Activities.FindAsync(id);  
         }
     }
 }
